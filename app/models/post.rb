@@ -8,5 +8,5 @@ class Post < ActiveRecord::Base
   #   @name = params[:name]
   #   @content = params[:content]
   # end
-  
+
 end
