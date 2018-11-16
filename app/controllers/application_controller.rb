@@ -41,7 +41,7 @@ class ApplicationController < Sinatra::Base
 
     @post.save
 
-    redirect '/posts/params[:id]'
+    redirect '/posts/#{params[:id]}'
   end
 
   post '/posts' do
