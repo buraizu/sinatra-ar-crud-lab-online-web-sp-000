@@ -36,9 +36,7 @@ class ApplicationController < Sinatra::Base
   patch '/posts/:id' do
     @post = Post.find(params[:id])
     @post[:content] = params[:content]
-
     @post[:name] = params[:name]
-
     @post.save
     redirect to "/posts/#{post.id}"
 
