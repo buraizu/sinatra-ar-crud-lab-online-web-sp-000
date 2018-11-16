@@ -38,10 +38,10 @@ class ApplicationController < Sinatra::Base
     @post[:content] = params[:content]
 
     @post[:name] = params[:name]
-
+    binding.pry
     @post.save
 
-  
+
   end
 
   post '/posts' do
