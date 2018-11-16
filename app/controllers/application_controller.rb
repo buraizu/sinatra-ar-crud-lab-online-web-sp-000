@@ -29,12 +29,13 @@ class ApplicationController < Sinatra::Base
 
   get '/posts/:id/edit' do
     @post = Post.find(params[:id])
-    
+
     erb :edit
   end
 
   patch '/posts/:id' do
-
+    @post[:content] = params[:content]
+    redirect '/posts/params[:id]'
   end
 
   post '/posts' do
