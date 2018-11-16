@@ -27,6 +27,10 @@ class ApplicationController < Sinatra::Base
     erb :show
   end
 
+  get '/posts/:id/edit' do
+    erb :edit
+  end
+
   post '/posts' do
     @post = Post.create(:name => params[:post_name], :content => params[:post_content])
     redirect to '/posts'
