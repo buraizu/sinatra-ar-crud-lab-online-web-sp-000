@@ -20,8 +20,8 @@ end
 #   <li>Title: <%= post[:name] %></li>
 #   <li>Content: <%= post[:content] %></li>
 # <% end %>
-# </ul> --> 
-# 
+# </ul> -->
+#
 #  <!-- @posts =
 # [#<Post:0x007fd2606bad20 id: 3, name: "POST1", content: "content content">,
 #<Post:0x007fd2606d5d50 id: 4, name: "POST1", content: "content content">,
