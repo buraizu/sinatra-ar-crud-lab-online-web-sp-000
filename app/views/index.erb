@@ -1,8 +1,10 @@
 <h1>You made it to /posts!</h1>
 <p><%= @post.post_content %></p>
 
+<h2>Posts</h2>
 <ul>
 <% @posts.each do |post|%>
-  <li><%= post.content %></li>
+  <li>Title: <%= post.name %></li>
+  <li>Content: <%= post.content %></li>
 <% end %>
 </ul>
