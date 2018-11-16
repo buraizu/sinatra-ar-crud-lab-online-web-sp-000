@@ -36,9 +36,9 @@ class ApplicationController < Sinatra::Base
   patch '/posts/:id' do
     @post[:content] = params[:content]
     @post[:name] = params[:name]
-
-    @post.save
     binding.pry
+    @post.save
+    
     redirect '/posts/params[:id]'
   end
 
