@@ -14,7 +14,6 @@ class ApplicationController < Sinatra::Base
 
   get '/posts' do
     @posts = Post.all
-
     erb :index
   end
 
@@ -49,5 +48,5 @@ class ApplicationController < Sinatra::Base
     @post = Post.find(params[:id])
     @post.destroy
   end
-  
+
 end
