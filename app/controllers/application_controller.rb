@@ -45,4 +45,8 @@ class ApplicationController < Sinatra::Base
     @post = Post.create(:name => params[:post_name], :content => params[:post_content])
     redirect to '/posts'
   end
+
+  delete '/posts/:id/delete' do
+    
+  end
 end
